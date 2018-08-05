@@ -1,6 +1,6 @@
-# Laravel Minify Output HTML
-
 ![Laravel Minify Output HTML](images/laravel-minify.png?raw=true "Laravel Minify Output HTML")
+
+# Laravel Minify Output HTML
 
 Pacote para minificar o html de saída gerado pelo laravel sem utilizar bibliotecas externas.
 
