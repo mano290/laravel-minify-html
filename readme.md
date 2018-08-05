@@ -2,12 +2,15 @@
 
 Pacote para minificar o html de saída gerado pelo laravel sem utilizar bibliotecas externas.
 
-## Instalação
+## Instalação da biblioteca
+
+Usando o composer utilize o seguinte comando:
 
 `composer require workspace/laravel-minify-html`
 
 ## Como utilizar?
 
+O pacote fornece uma middleware onde comprimi o HTML gerado pelo response laravel.
 Adicone a middleware `CompressHtml` no arquivo `App\Http\Kernel` no atributo `protected $middleware`
 
 Exemplo:
@@ -24,16 +27,17 @@ class Kernel extends HttpKernel
      */
     protected $middleware = [
         // ... Outras middlewares do projeto
-        \Workspace\LaravelMinifyHtml\Middleware\CompressHtml:class,
+        \Workspace\LaravelMinifyHtml\Middleware\CompressHtml::class,
     ];
 }
 ```
 
-Caso você queria desabilitar a compressão HTML coloque em seu `.env`
+Caso você queria desabilitar a compressão HTML sem retirar a middleware coloque em seu `.env`
 
-``
+```dotenv
+## Disable minify output html
 LARAVEL_MINIFY_HTML=false
-``
+```
 
 ## Exemplos da saída HTML
 
