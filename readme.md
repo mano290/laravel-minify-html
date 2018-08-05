@@ -11,6 +11,7 @@ Usando o composer utilize o seguinte comando:
 ## Como utilizar?
 
 O pacote fornece uma middleware onde comprimi o HTML gerado pelo response laravel.
+
 Adicone a middleware `CompressHtml` no arquivo `App\Http\Kernel` no atributo `protected $middleware`
 
 Exemplo:
