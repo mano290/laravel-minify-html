@@ -29,7 +29,7 @@ class Kernel extends HttpKernel
 }
 ```
 
-Caso você queria desabilitar a compresão HTML coloque em seu `.env`
+Caso você queria desabilitar a compressão HTML coloque em seu `.env`
 
 ``
 LARAVEL_MINIFY_HTML=false
