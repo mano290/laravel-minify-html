@@ -1,0 +1,23 @@
+{
+    "name": "workspace/laravel-minify-html",
+    "description": "Compress output Laravel HTML",
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Ataides Rodrigues",
+            "email": "mano_ataides@hotmail.com"
+        }
+    ],
+    "keywords": [
+      "laravel",
+      "blade",
+      "minify html"
+    ],
+    "autoload": {
+        "psr-4": {
+            "Workspace\\LaravelMinifyHtml\\": "src/"
+        }
+    },
+    "require": {}
+}
